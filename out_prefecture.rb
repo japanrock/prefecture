@@ -4,15 +4,15 @@ class Soumu
   end
 
   def prefecture
-    @prefecture = []
+    prefecture = []
 
     @csv_file.each do |prefecture_list|
       if prefecture_list.split(/,/)[2] == "\n"
-        @prefecture << prefecture_list
+        prefecture << prefecture_list
       end
     end
 
-    @prefecture
+    prefecture
   end
 end
 
