@@ -25,7 +25,7 @@ class Prefecture
     soumu = Soumu.new
     
     soumu.prefecture.each do |prefecture|
-      @csv_file.puts prefecture
+      @csv_file.puts prefecture.gsub(/,$/, '')
     end
   end
 end
