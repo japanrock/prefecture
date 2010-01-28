@@ -18,7 +18,7 @@ end
 
 class Prefecture
   def initialize
-    @csv_file = open("prefecture.csv","w")
+    @csv_file = open("prefectures.csv","w")
   end
 
   def create_file
